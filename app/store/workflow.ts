@@ -1,7 +1,4 @@
-import {Node} from "reactflow";
-
 import { createPersistStore } from "../utils/store";
-
 
 const DEFAULT_PLUGIN_STATE = {
 

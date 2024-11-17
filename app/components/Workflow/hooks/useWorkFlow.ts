@@ -1,5 +1,5 @@
-import {useEdgesState, useNodesState, MarkerType} from "@xyflow/react";
-import {End, Start} from "@/app/work_flow/assets";
+import {useEdgesState, useNodesState} from "@xyflow/react";
+import {End, Start} from "../../../work_flow/assets";
 
 
 export default function useWorkFlow() {
@@ -12,11 +12,13 @@ export default function useWorkFlow() {
                 y: 200
             },
             data: {
+                _selected: false,
                 nodeMeta: {
                     description: "工作流的起始节点，用于设定启动工作流需要的信息",
                     icon: Start,
                     subTitle: "",
-                    title: "开始"
+                    title: "开始",
+                    nodeType: 'start'
                 },
                 outputs: [
                     {
@@ -41,11 +43,13 @@ export default function useWorkFlow() {
                 y: 0
             },
             data: {
+                _selected: false,
                 nodeMeta: {
                     description: "工作流的最终节点，用于返回工作流运行后的结果信息",
                     icon: End,
                     subTitle: "",
-                    title: "结束"
+                    title: "结束",
+                    nodeType: 'end',
                 },
                 inputs: {
                     terminatePlan: "returnVariables",
@@ -67,23 +71,14 @@ export default function useWorkFlow() {
                     ]
                 }
             }
-        }
+        },
     ];
 
 
-    const initialEdges = [
-        {
-            id: '1',
-            source: '100001',
-            target: '900001',
-            type: 'custom',
-            data: {_hovering: false, _selected: false},
-            markerEnd: { type: MarkerType.ArrowClosed, color: '#4d53e8' },
-        },
-    ]
 
-    const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
-    const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+    const [nodes, setNodes] = useNodesState(initialNodes);
+    const [edges, setEdges, onEdgesChange] = useEdgesState([]);
 
-    return {nodes, edges, setNodes, setEdges}
+
+    return {nodes,edges, setNodes, setEdges,onEdgesChange }
 }

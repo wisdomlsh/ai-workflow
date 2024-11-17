@@ -7,50 +7,54 @@ import Image from "next/image";
 import {IconChevronLeft, IconPlus} from "@douyinfe/semi-icons";
 import avatar from "./assets/avatar.png";
 import {LLM, Knowledge, Condition, Intent, Api} from "./assets";
+import {useAddNode} from "@/app/work_flow/hooks";
+import {ReactFlowProvider} from "@xyflow/react";
+import {BlockEnum} from "@/app/utils/typing";
 
 
 const {Header, Sider, Content} = SemiLayoyt;
 
 const list = [
     {
-        type: 1,
-        nodeName: 'LLM',
-        nodeType: 'LLM',
-        nodeDesc: '文本类AI大模型，根据要求来命令AI为你服务',
-        nodeIcon: LLM,
+        title: 'LLM',
+        subTitle: 'LLM',
+        nodeType: 'llm',
+        description: '文本类AI大模型，根据要求来命令AI为你服务',
+        icon: LLM,
     },
     {
-        type: 2,
-        nodeName: '知识库',
+        title: '知识库',
+        subTitle: '知识库',
         nodeType: 'Knowledge',
-        nodeDesc: '向知识库查询',
-        nodeIcon: Knowledge,
+        description: '向知识库查询',
+        icon: Knowledge,
     },
     {
-        type: 3,
-        nodeName: '选择器',
+        title: '选择器',
+        subTitle: '选择器',
         nodeType: 'Conditions',
-        nodeDesc: '设计条件逻辑分支，根据设定条件走向不同的路径',
-        nodeIcon: Condition,
+        description: '设计条件逻辑分支，根据设定条件走向不同的路径',
+        icon: Condition,
     },
     {
-        type: 4,
-        nodeName: '意图识别',
+        title: '意图识别',
+        subTitle: '意图识别',
         nodeType: 'Intention',
-        nodeDesc: '对用户问题进行意图识别和分类',
-        nodeIcon: Intent
+        description: '对用户问题进行意图识别和分类',
+        icon: Intent
     },
     {
-        type: 5,
-        nodeName: 'API',
+        title: 'API',
+        subTitle: 'API',
         nodeType: 'API',
-        nodeDesc: '支持外部API调用',
-        nodeIcon: Api
+        description: '支持外部API调用',
+        icon: Api
     },
 ];
 
-export default function Layout({children}: { children: ReactNode }) {
+function Layout({children}: { children: ReactNode }) {
 
+    const {handleDragStart} = useAddNode()
 
     return <SemiLayoyt className="h-full">
 
@@ -85,14 +89,17 @@ export default function Layout({children}: { children: ReactNode }) {
                 </h5>
                 <ul className='w-full flex flex-col gap-2'>
                     {
-
                         list.map((v) => {
                             return <li draggable
                                        className='flex items-center  justify-between  w-56 mx-auto px-4 py-3 bg-white rounded-[8px] cursor-grab hover:shadow-lg active:cursor-grabbing  transition-shadow duration-300'
-                                       key={v.type}>
+                                       key={v.nodeType}
+                                       onDragStart={(e) => {
+                                           handleDragStart(e, v.nodeType, v);
+                                       }}
+                            >
                                 <div className='flex gap-2 items-center'>
-                                    <Image src={v.nodeIcon} alt="avatar" width={28} height={28}/>
-                                    <span className='font-semibold text-base'>{v.nodeName}</span>
+                                    <Image src={v.icon} alt="avatar" width={28} height={28}/>
+                                    <span className='font-semibold text-base'>{v.title}</span>
                                 </div>
                                 <IconPlus/>
                             </li>
@@ -106,4 +113,12 @@ export default function Layout({children}: { children: ReactNode }) {
         </SemiLayoyt>
     </SemiLayoyt>
 }
+
+const WorkFlowLayOut = ({children}: { children: ReactNode }) => {
+    return <ReactFlowProvider>
+        <Layout>{children}</Layout>
+    </ReactFlowProvider>
+}
+
+export default WorkFlowLayOut
 

@@ -1,1 +1,1 @@
-export {default as WorkflowCanvas } from './WorkflowCanvas';
+export {default as Workflow } from './Workflow';

@@ -1,7 +1,7 @@
 'use client'
-import {WorkflowCanvas} from "@/app/components";
+import {Workflow} from "@/app/components";
 
 export default function Page() {
-    return <WorkflowCanvas/>
+    return <Workflow/>
 
 }

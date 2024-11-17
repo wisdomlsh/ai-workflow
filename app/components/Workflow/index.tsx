@@ -1,19 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
     ReactFlow,
-    ReactFlowProvider,
     Background,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css'
 import {Operator, CustomEdge, CustomNode, CustomLineConnect} from "./components";
 import {useWorkFlow, useEdgesInteractions} from "./hooks";
+import {useAddNode} from "@/app/work_flow/hooks";
+import useNodesInteractions from "./hooks/useNodesInteractions";
 
 
-function WorkflowCanvas() {
+function Workflow() {
 
-    const {nodes, edges, setEdges, setNodes} = useWorkFlow()
-    const {handleEdgeEnter, handleEdgeLeave, handleEdgeClick, handlePaneClick} = useEdgesInteractions()
+    const {nodes, edges} = useWorkFlow()
+    const {handleDrop, handleDragOver} = useAddNode()
 
+    const {handleEdgeEnter, handleEdgeLeave, handleEdgeChange, handlePaneClick,onReconnect, onConnect} = useEdgesInteractions()
+    const {handleNodeClick, handleNodesChange} = useNodesInteractions()
 
     const edgeTypes = {
         custom: CustomEdge,
@@ -23,9 +26,9 @@ function WorkflowCanvas() {
     };
 
 
+
     return (
         <div className='h-full relative'>
-
             <Operator/>
             <ReactFlow
                 nodes={nodes}
@@ -34,14 +37,17 @@ function WorkflowCanvas() {
                 nodeTypes={nodeTypes}
                 onEdgeMouseEnter={handleEdgeEnter}
                 onEdgeMouseLeave={handleEdgeLeave}
-                onEdgeClick={handleEdgeClick}
                 onPaneClick={handlePaneClick}
                 fitView
                 connectionLineComponent={CustomLineConnect}
                 minZoom={0.25}
-                // onNodesChange={onNodesChange}
-                // onEdgesChange={onEdgesChange}
-                // onConnect={onConnect}
+                onNodesChange={handleNodesChange}
+                onEdgesChange={handleEdgeChange}
+                onReconnect={onReconnect}
+                onConnect={onConnect}
+                onDrop={handleDrop}
+                onDragOver={handleDragOver}
+                onNodeClick={handleNodeClick}
             >
 
 
@@ -57,8 +63,5 @@ function WorkflowCanvas() {
     );
 }
 
-function Workflow() {
-    return <ReactFlowProvider><WorkflowCanvas/></ReactFlowProvider>
-}
 
 export default Workflow;

@@ -8,26 +8,37 @@ import {CursorIcon, HandIcon, LayoutIcon, ViewIcon} from "@/app/assets";
 function Control() {
 
     const operatorList = [
+        // {
+        //     id: 1,
+        //     description: '撤销',
+        //     icon: <IconUndo className='text-gray-500'/>,
+        //
+        // }, {
+        //     id: 2,
+        //     description: '重做',
+        //     icon: <CursorIcon className='text-gray-500'/>,
+        //
+        // },
         {
-            id: 1,
+            id: 3,
             description: '指针模式',
             icon: <CursorIcon className='text-gray-500'/>,
 
         },
         {
-            id: 2,
+            id: 4,
             description: '手模式',
             icon: <HandIcon className='text-gray-500'/>,
 
         },
         {
-            id: 3,
+            id: 5,
             description: '自适应视图',
             icon: <ViewIcon className='text-gray-500'/>,
 
         },
         {
-            id: 4,
+            id: 6,
             description: '整理布局',
             icon: <LayoutIcon className='text-gray-500'/>,
 
