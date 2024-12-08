@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7713640f-1ef4-4a29-9d30-720024aa3f81" name="更改" comment="feat: 添加多个节点文件">
+      <change afterPath="$PROJECT_DIR$/app/assets/google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/common/panel/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/home/setting/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/home/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/useModal.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/useTheme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/common.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/work_flow/assets/icons/run.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/work_flow/assets/icons/setting.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workflow.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Workflow/components/BaseNode/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Workflow/components/BaseNode/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Workflow/components/Control/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Workflow/components/Control/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Workflow/components/CustomLineConnect/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Workflow/components/CustomLineConnect/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Workflow/components/CustomNode/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Workflow/components/CustomNode/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Workflow/components/Nodes/Condition/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Workflow/components/Nodes/Condition/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Workflow/components/Nodes/Start/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Workflow/components/Nodes/Start/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Workflow/components/Nodes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Workflow/components/Nodes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Workflow/components/Operator/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Workflow/components/Operator/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Workflow/components/ZoomInOut/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Workflow/components/ZoomInOut/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Workflow/hooks/useWorkFlow.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Workflow/hooks/useWorkFlow.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Workflow/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Workflow/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/base/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/base/portal-to-follow-elem/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/base/tip-popup/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/base/tooltip-plus/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/library/index.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/library/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/library/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/flow-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/flow-theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/typing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/typing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/work_flow/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/work_flow/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/work_flow/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/work_flow/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo.svg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2ot4LHcrBiRWVMyBHM490noQQv9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/lishuo/Desktop/lishuo/workflow/workflow/app/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "editing.templates",
+    "ts.external.directory.path": "/Users/lishuo/Desktop/lishuo/workflow/workflow/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets" />
+      <recent name="$PROJECT_DIR$/app/components/Workflow/components/Nodes/Variable" />
+      <recent name="$PROJECT_DIR$/app/components/Workflow/components/Nodes/Text" />
+      <recent name="$PROJECT_DIR$/app/components/Workflow/components/Nodes/Question" />
+      <recent name="$PROJECT_DIR$/app/components/Workflow/components/Nodes/LTM" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/components/home" />
+      <recent name="$PROJECT_DIR$/app/home" />
+      <recent name="$PROJECT_DIR$/app/components/WorkflowCanvas/components/Nodes/Start" />
+      <recent name="$PROJECT_DIR$/app/components/WorkflowCanvas/components/CustomLineConnect" />
+      <recent name="$PROJECT_DIR$/app/work_flow/assets" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v18.18.0/bin/node" />
+      <package-manager value="$USER_HOME$/.nvm/versions/node/v18.18.0/bin/pnpm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17890.13" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="7713640f-1ef4-4a29-9d30-720024aa3f81" name="更改" comment="" />
+      <created>1731675480966</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731675480966</updated>
+      <workItem from="1731675483056" duration="1833000" />
+      <workItem from="1731677339514" duration="42235000" />
+      <workItem from="1731754893726" duration="37622000" />
+      <workItem from="1731828463907" duration="12800000" />
+      <workItem from="1732368923228" duration="13408000" />
+      <workItem from="1732933708863" duration="24000" />
+      <workItem from="1732933765615" duration="22750000" />
+      <workItem from="1732958449270" duration="640000" />
+      <workItem from="1732959103485" duration="5000" />
+      <workItem from="1732959143701" duration="3498000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: 添加多个节点文件">
+      <option name="closed" value="true" />
+      <created>1731852610475</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731852610475</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 添加多个节点文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加多个节点文件" />
+  </component>
+</project>

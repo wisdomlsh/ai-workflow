@@ -1,9 +1,9 @@
 import React from 'react';
 
-function ConditionNode() {
+function ConditionsNode() {
     return (
         <div>1323</div>
     );
 }
 
-export default ConditionNode;
+export default ConditionsNode;

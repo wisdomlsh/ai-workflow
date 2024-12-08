@@ -11,19 +11,22 @@
   },
   "dependencies": {
     "@xyflow/react": "^12.3.5",
-    "next": "15.0.3",
+    "next": "14.2.10",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
   "devDependencies": {
     "@douyinfe/semi-icons": "^2.69.1",
+    "@douyinfe/semi-next": "^2.70.1",
     "@douyinfe/semi-ui": "^2.69.1",
     "@floating-ui/react": "^0.26.28",
+    "@semi-bot/semi-theme-dark-theme": "^1.0.1",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "ahooks": "^3.8.1",
+    "axios": "^1.7.8",
     "classnames": "^2.5.1",
     "eslint": "^8",
     "eslint-config-next": "15.0.3",

@@ -1,3 +1,7 @@
 export {default as StartNode} from './Start'
 export {default as EndNode} from './End'
 export {default as LLMNode} from './LLM'
+export {default as KnowledgeNode} from './Knowledge'
+export {default as ConditionsNode} from './Condition'
+export {default as IntentNode} from './Intent'
+export {default as APINode} from './Api'

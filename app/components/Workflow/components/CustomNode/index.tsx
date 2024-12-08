@@ -9,14 +9,12 @@ interface IProps {
 
 function CustomNode(props: IProps) {
     const {data} = props
-
     const NodeComponent = NodeComponentMap[data.nodeMeta.nodeType]
-
-   return useMemo(() => {
-       return (
-           <BaseNode data={data}><NodeComponent /></BaseNode>
-       );
-   }, [NodeComponent, data])
+    return useMemo(() => {
+        return (
+            <BaseNode data={data}><NodeComponent/></BaseNode>
+        );
+    }, [NodeComponent, data])
 }
 
 export default CustomNode;

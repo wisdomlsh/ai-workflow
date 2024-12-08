@@ -8,8 +8,8 @@ export default function useWorkFlow() {
             id: "100001",
             type: 'custom',
             position: {
-                x: 200,
-                y: 200
+                x: 400,
+                y: 0
             },
             data: {
                 _selected: false,
@@ -39,7 +39,7 @@ export default function useWorkFlow() {
             id: "900001",
             type: 'custom',
             position: {
-                x: 1000,
+                x: 800,
                 y: 0
             },
             data: {

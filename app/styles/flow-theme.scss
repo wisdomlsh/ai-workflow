@@ -10,11 +10,14 @@
   text-align: center;
 }
 
+.react-flow__handle {
+  border: none !important;
+}
 
 .react-flow__handle-right {
   width: 12px !important;
   height: 12px !important;
-  background: var(--neur-theme) !important;
+  background: var(--neur-theme-color) !important;
   pointer-events: all;
   transition: transform 0.3s;
   transform-origin: center center;
@@ -38,7 +41,7 @@
 .react-flow__handle-left {
   width: 12px !important;
   height: 12px !important;
-  background: var(--neur-theme) !important;
+  background: var(--neur-theme-color) !important;
   pointer-events: all !important;
   transition: transform 0.3s;
   transform-origin: center center;

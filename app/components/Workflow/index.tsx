@@ -1,19 +1,21 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {
     ReactFlow,
     Background,
 } from '@xyflow/react';
-import '@xyflow/react/dist/style.css'
 import {Operator, CustomEdge, CustomNode, CustomLineConnect} from "./components";
 import {useWorkFlow, useEdgesInteractions} from "./hooks";
 import {useAddNode} from "@/app/work_flow/hooks";
 import useNodesInteractions from "./hooks/useNodesInteractions";
+import {useConfigStore} from "@/app/store";
 
+import '@xyflow/react/dist/style.css'
 
 function Workflow() {
 
     const {nodes, edges} = useWorkFlow()
     const {handleDrop, handleDragOver} = useAddNode()
+    const config = useConfigStore()
 
     const {handleEdgeEnter, handleEdgeLeave, handleEdgeChange, handlePaneClick,onReconnect, onConnect} = useEdgesInteractions()
     const {handleNodeClick, handleNodesChange} = useNodesInteractions()
@@ -48,14 +50,11 @@ function Workflow() {
                 onDrop={handleDrop}
                 onDragOver={handleDragOver}
                 onNodeClick={handleNodeClick}
+                colorMode={config.theme}
             >
 
 
-                <Background
-                    gap={[14, 14]}
-                    size={2}
-                    color='#E4E5E7'
-                />
+                <Background />
             </ReactFlow>
 
 

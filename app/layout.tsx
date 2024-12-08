@@ -1,7 +1,8 @@
-import type {Metadata} from "next";
+"use client"
 import localFont from "next/font/local";
 import "./styles/global.scss";
 import './styles/flow-theme.scss';
+import {useTheme} from "@/app/hooks";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -14,23 +15,24 @@ const geistMono = localFont({
     weight: "100 900",
 });
 
-export const metadata: Metadata = {
-    title: "neure",
-    description: "神经元，模仿coze",
-};
+// export const metadata: Metadata = {
+//     title: "neure",
+//     description: "神经元，模仿coze",
+// };
 
 export default function RootLayout({
                                        children,
                                    }: Readonly<{
     children: React.ReactNode;
 }>) {
+    useTheme()
+
     return (
         <html lang="en">
         <head>
-            <link rel="icon" type="image/svg+xml" href="/logo.svg"/>
-            {/* 提供备用的 favicon.ico */}
             <link rel="alternate icon" href="/favicon.ico"/>
         </head>
+        <title>NEUR</title>
         <body
             className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
@@ -39,7 +41,6 @@ export default function RootLayout({
             {children}
             {/*</ConfigProvider>*/}
         </div>
-
         </body>
         </html>
     );

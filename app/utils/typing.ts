@@ -3,11 +3,11 @@ import React from "react";
 export enum BlockEnum {
     Start = 'start',
     End = 'end',
-    Answer = 'answer',
+    Intent = 'intention',
     LLM = 'llm',
-    KnowledgeRetrieval = 'knowledge-retrieval',
-    QuestionClassifier = 'question-classifier',
-    IfElse = 'if-else',
+    Knowledge = 'knowledge',
+    API = 'api',
+    Conditions = 'conditions',
     Code = 'code',
     TemplateTransform = 'template-transform',
     HttpRequest = 'http-request',
@@ -29,3 +29,25 @@ export interface NodeData {
     id: string,
     _selected: boolean
 }
+
+interface OutputType {
+    description: string,
+    name: string,
+    required: boolean
+    type: string
+}
+
+export interface NodePropsType {
+    nodeMeta: NodeMeta,
+    outputs: OutputType[]
+
+}
+
+export type options = { label: string, value: string }
+
+export enum Theme {
+    Light = 'light',
+    Dark = 'dark',
+    System = 'system',
+}
+
